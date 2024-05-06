@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> My Portfolio</title>
+    <link rel = "stylesheet" href = "Style.css">
+    <script src="https://kit.fontawesome.com/6b9dd51ddd.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+<div id = "header">
+    <div class = "container">
+        <nav>
+            <a class = "logo">ALBERT</a>
+            <ul id="sidemenu">
+                <li class = "active"><a href = "#header"> Home</a></li>
+                <li><a href = "#about"> About</a></li>
+                <li><a href = "#Skills"> Skills</a></li>
+                <li><a href = "#Portfolio"> Portfolio</a></li>
+                <li><a href = "#Resume"> Resume</a></li>
+                <i class="fa-solid fa-x" onclick = "closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <br><span>Albert B. Gonzaga</span> </h1>
+            <p>A Computer Science Student</p>
+        </div>
+        <div class="icon">
+            <a href="https://www.facebook.com/share/xNEchqAWArZhgx6h/?mibextid=qi2Omg">
+                <img src="pic/facebook.png">
+            </a>
+            <a href="https://www.instagram.com/its_albert_kun?igsh=MTk3ZHg2b2VhaGpjOQ==">
+                <img src="pic/instagram.png">
+            </a>
+            <a href="https://www.youtube.com/@albertgonzaga6349">
+                <img src="pic/youtube (1).png">
+            </a>
+            <a href="https://www.linkedin.com/in/albert-gonzaga-4122a2301/"> 
+                <img src="pic/linkedin.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pic/About0.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT</h1>
+                <p>I'm Albert B. Gonzaga, a dedicated Computer Science Student
+                    passionate about exploring the realms of technology and innovation.
+                    Currently, I am pursuing my studies in Computer Science at
+                    Pambayang Dalubhasaan ng Marilao, where I am constantly
+                    expanding my knowledge and skills in programming,
+                    problem-solving, and website development. </p>
+                <a href ="Resume.pdf" class="btn" download><i class="fa-regular fa-circle-down"></i>Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "Skills">
+    <div class="container">
+        <div class="skill">SKILLS</div>
+        <div class="talent">
+            <h2>CANVA</h2>
+            <div class="progress-bar">
+                <div class="Canva"><span>80%</span></div>
+            </div>
+            <h2>FIGMA</h2>
+            <div class="progress-bar">
+                <div class="figma"><span>70%</span></div>
+            </div>
+            <h2>WEB-DEV</h2>
+            <div class="progress-bar">
+                <div class="web-dev"><span>55%</span></div>
+            </div>
+            <h2>CODING</h2>
+            <div class="progress-bar">
+                <div class="coding"><span>60%</span></div>
+            </div>
+            <h2>MS WORD</h2>
+            <div class="progress-bar">
+                <div class="ms-word"><span>93%</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "Portfolio">
+    <div class="container">
+        <div class="port">PORTFOLIO</div>
+        <div class="gallery">
+            <div class="img-box"><h3>Case Study: Augmented Reality using Adobe Aero</h3></div>
+            <div class="img-box"><h3>Case Study: Database Management using Ms Access and MySql</h3></div>
+            <div class="img-box"><h3>Case Study: Fitness Apps “Let's Get Physical” using Figma</h3></div>
+            <div class="img-box"><h3>Arduino Exhibit: Distance Approximately Detection with Buzzer</h3></div>
+            <div class="img-box"><h3>Add, Edit, Delete, Cancel and Save with connection to Mysql using C#</h3></div>
+        </div>
+    </div>
+</div>
+<div id="Resume">
+    <div class="container">
+        <div class="row">
+            <div class="down-1">
+                <img src="pic/Resume.jpg">
+            </div>
+            <div class="down-2">
+                <h1 class="alpha">Resume</h1>
+                <p>"I'd love to hear from you"</p>
+                <a href ="Resume.pdf" class="btn" download><i class="fa-regular fa-circle-down"></i>Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
